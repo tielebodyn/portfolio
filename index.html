@@ -7,25 +7,42 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>Studio Bodyn</title>
   </head>
-  <body>
-    <div id="app" class="">
-      <header class="mx-80 mt-32">
-        <nav>
-          <ul class="flex justify-between">
-            <span class="flex space-x-16">
-              <li>work</li>
-              <li>about</li>
+  <body class="bg-gray-100">
+    <div class="flex justify-center items-center">
+      <header class="pt-32 text-xl h-screen flex-col items-center">
+        <nav class="flex flex-col items-end lg:items-stretch">
+          <ul class="justify-between hidden lg:flex">
+            <span class="flex lg:space-x-16">
+              <li><a href="#">work</a></li>
+              <li><a href="#">about</a></li>
               <li>|</li>
-              <li>LinkedIn</li>
-              <li>Github</li>
-              <li>Email</li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Github</a></li>
+              <li><a href="#">Email</a></li>
             </span>
             <li>
-              <a href="" class="bg-secondary px-6 py-2 rounded-md">Contact</a>
+              <a href="" class="bg-secondary lg:px-6 py-2 rounded-four"
+                >Contact</a
+              >
             </li>
           </ul>
+          <img
+            class="lg:hidden w-min"
+            src="./src/images/hanburger.svg"
+            alt=""
+          />
         </nav>
-        <div id="pixel_name"></div>
+
+        <div class="container mt-24 lg:mt-48">
+          <div class="md:flex">
+            <div class="partOne flex"></div>
+            <div class="partTwo flex"></div>
+          </div>
+          <div class="md:flex">
+            <div class="partThree flex"></div>
+            <div class="partFour flex"></div>
+          </div>
+        </div>
       </header>
     </div>
     <script type="module" src="/src/ts/index.ts"></script>
