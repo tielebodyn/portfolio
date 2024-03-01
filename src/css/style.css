@@ -15,8 +15,8 @@ margin: 1.5vw;
 
 @media (max-width: 768px) {
   .pixel{
-	width: 3vw;
-	height: 3vw;
+	width: 4vw;
+	height: 4vw;
 	max-width: 30px;
 	max-height: 30px;
   }
