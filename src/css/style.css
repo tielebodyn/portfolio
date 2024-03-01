@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pixel{
+width: 2vw;
+height: 2vw;
+max-width: 30px;
+max-height: 30px;
+}
+.letterWrapper{
+margin: 1.5vw;
+}
+
+
+@media (max-width: 768px) {
+  .pixel{
+	width: 3vw;
+	height: 3vw;
+	max-width: 30px;
+	max-height: 30px;
+  }
+  .letterWrapper{
+	margin: 3vw;
+  }
+
+}
+
+.activePixel {
+  	opacity: 0;
+    animation: fadeIn var(--animation-time) ease-in forwards;
+
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+
